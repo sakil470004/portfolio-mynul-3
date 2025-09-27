@@ -25,11 +25,6 @@ const Projects = () => {
         client: '#',
         server: '#'
       },
-      stats: {
-        users: '1000+',
-        events: '500+',
-        satisfaction: '95%'
-      },
       category: 'Full Stack'
     },
     {
@@ -49,11 +44,6 @@ const Projects = () => {
       links: {
         live: '#',
         github: '#'
-      },
-      stats: {
-        products: '10k+',
-        orders: '2500+',
-        rating: '4.8/5'
       },
       category: 'E-commerce'
     },
@@ -75,11 +65,6 @@ const Projects = () => {
         live: '#',
         github: '#'
       },
-      stats: {
-        tools: '25+',
-        users: '800+',
-        usage: '95%'
-      },
       category: 'Utility'
     },
     {
@@ -99,11 +84,6 @@ const Projects = () => {
       links: {
         live: '#',
         github: '#'
-      },
-      stats: {
-        products: '500+',
-        families: '1.2k+',
-        satisfaction: '92%'
       },
       category: 'E-commerce'
     },
@@ -125,11 +105,6 @@ const Projects = () => {
         live: '#',
         github: '#'
       },
-      stats: {
-        teams: '150+',
-        tasks: '5k+',
-        efficiency: '85%'
-      },
       category: 'Utility'
     },
     {
@@ -150,11 +125,6 @@ const Projects = () => {
         live: '#',
         github: '#'
       },
-      stats: {
-        downloads: '10k+',
-        locations: '1000+',
-        accuracy: '94%'
-      },
       category: 'Mobile App'
     },
     {
@@ -174,11 +144,6 @@ const Projects = () => {
       links: {
         live: '#',
         github: '#'
-      },
-      stats: {
-        bloggers: '800+',
-        articles: '25k+',
-        engagement: '76%'
       },
       category: 'Full Stack'
     }
@@ -292,15 +257,6 @@ const Projects = () => {
                       </svg>
                       <p>Project Screenshot</p>
                     </div>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-4">
-                    {Object.entries(projects[selectedProject].stats).map(([key, value], index) => (
-                      <div key={index} className="text-center bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
-                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{value}</div>
-                        <div className="text-sm text-gray-600 dark:text-gray-300 capitalize">{key}</div>
-                      </div>
-                    ))}
                   </div>
                 </div>
               </div>
