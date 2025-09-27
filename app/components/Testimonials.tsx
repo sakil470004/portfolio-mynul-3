@@ -9,28 +9,37 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Sarah Johnson",
-      role: "Project Manager at Aliyah Holdings",
+      role: "Project Manager",
       company: "Aliyah Holdings LLC",
       image: "/api/placeholder/80/80",
-      content: "Mynul consistently delivered high-quality work on time. His expertise in MERN stack development helped us achieve a 35% improvement in server response time. A true professional who goes above and beyond.",
+      content: "Mynul consistently delivered high-quality work on time. His expertise in MERN stack development and Socket.io implementation helped us achieve a 35% improvement in server response time and 40% increase in active session duration. A true professional who goes above and beyond.",
       rating: 5
     },
     {
       id: 2,
       name: "David Chen",
-      role: "CTO at Rapid Proposal",
+      role: "CTO",
       company: "Rapid Proposal LLC",
       image: "/api/placeholder/80/80",
-      content: "Working with Mynul was a game-changer for our project. His React and Chart.js skills created an amazing admin dashboard that reduced our data retrieval time by 50%. Highly recommend!",
+      content: "Working with Mynul was a game-changer for our project. His React and Chart.js expertise created an amazing interactive admin dashboard that reduced our data retrieval time by 50% and improved load times by 30%. His API security implementation was flawless.",
       rating: 5
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Lead Developer",
-      company: "Tech Solutions Inc",
+      name: "Dr. Maria Santos",
+      role: "Research Supervisor",
+      company: "Tunnel Research Lab",
       image: "/api/placeholder/80/80",
-      content: "Mynul's attention to detail and problem-solving skills are exceptional. He delivered a secure, scalable application with zero security breaches. His code quality is top-notch.",
+      content: "Mynul's contribution as a research assistant was outstanding. His work in AI and image processing algorithms improved our object detection accuracy by 25%. His database management skills and research methodology were exemplary.",
+      rating: 5
+    },
+    {
+      id: 4,
+      name: "Michael Thompson",
+      role: "Senior Developer",
+      company: "TechCorp Solutions",
+      image: "/api/placeholder/80/80",
+      content: "I've collaborated with Mynul on several competitive programming challenges. His problem-solving skills on platforms like LeetCode and Codeforces are impressive. He brings the same analytical thinking to real-world development projects.",
       rating: 5
     }
   ];

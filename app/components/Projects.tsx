@@ -84,32 +84,107 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'Battle Toys - Gaming Platform',
-      description: 'Interactive gaming platform for toy battles with real-time multiplayer functionality and leaderboards.',
+      title: 'Battle Toys - Children\'s Toy Website',
+      description: 'A delightful e-commerce website specializing in children\'s toys and games. Features an engaging, kid-friendly design with easy navigation for parents and exciting visuals for children.',
       image: '/api/placeholder/600/400',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB', 'Express'],
+      technologies: ['React', 'CSS3', 'JavaScript', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
       features: [
-        'Real-time multiplayer battles',
-        'Interactive game mechanics',
-        'Player ranking system',
-        'Achievement badges',
-        'Social features and chat',
-        'Mobile-responsive gameplay'
+        'Kid-friendly colorful interface design',
+        'Product catalog with age-appropriate filtering',
+        'Secure payment processing for parents',
+        'Wishlist and favorites functionality',
+        'Interactive product galleries',
+        'Mobile-responsive design for family use'
       ],
       links: {
         live: '#',
         github: '#'
       },
       stats: {
-        players: '2k+',
-        battles: '15k+',
-        retention: '78%'
+        products: '500+',
+        families: '1.2k+',
+        satisfaction: '92%'
       },
-      category: 'Gaming'
+      category: 'E-commerce'
+    },
+    {
+      id: 5,
+      title: 'Task Management System',
+      description: 'Comprehensive task and project management platform with team collaboration features, deadline tracking, and productivity analytics.',
+      image: '/api/placeholder/600/400',
+      technologies: ['React', 'Redux', 'Node.js', 'PostgreSQL', 'Socket.io', 'Chart.js'],
+      features: [
+        'Project and task creation with priorities',
+        'Team collaboration and assignment',
+        'Real-time notifications and updates',
+        'Progress tracking and analytics',
+        'File attachments and comments',
+        'Deadline reminders and calendar integration'
+      ],
+      links: {
+        live: '#',
+        github: '#'
+      },
+      stats: {
+        teams: '150+',
+        tasks: '5k+',
+        efficiency: '85%'
+      },
+      category: 'Utility'
+    },
+    {
+      id: 6,
+      title: 'Weather Forecast App',
+      description: 'Modern weather application providing accurate forecasts, interactive maps, and personalized weather alerts for multiple locations.',
+      image: '/api/placeholder/600/400',
+      technologies: ['React Native', 'TypeScript', 'Weather API', 'Redux', 'React Navigation'],
+      features: [
+        'Current weather and 7-day forecasts',
+        'Interactive weather maps and radar',
+        'Location-based weather alerts',
+        'Hourly weather predictions',
+        'Weather history and trends',
+        'Offline data caching'
+      ],
+      links: {
+        live: '#',
+        github: '#'
+      },
+      stats: {
+        downloads: '10k+',
+        locations: '1000+',
+        accuracy: '94%'
+      },
+      category: 'Mobile App'
+    },
+    {
+      id: 7,
+      title: 'AI-Powered Blog Platform',
+      description: 'Intelligent blogging platform with AI content suggestions, automatic SEO optimization, and advanced analytics for content creators.',
+      image: '/api/placeholder/600/400',
+      technologies: ['Next.js', 'TypeScript', 'OpenAI API', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
+      features: [
+        'AI-powered content suggestions',
+        'Automatic SEO optimization',
+        'Rich text editor with markdown support',
+        'Advanced analytics dashboard',
+        'Social media integration',
+        'Comment system with moderation'
+      ],
+      links: {
+        live: '#',
+        github: '#'
+      },
+      stats: {
+        bloggers: '800+',
+        articles: '25k+',
+        engagement: '76%'
+      },
+      category: 'Full Stack'
     }
   ];
 
-  const categories = ['All', 'Full Stack', 'E-commerce', 'Utility', 'Gaming'];
+  const categories = ['All', 'Full Stack', 'E-commerce', 'Utility', 'Mobile App'];
   const [activeCategory, setActiveCategory] = useState('All');
 
   const filteredProjects = activeCategory === 'All' 

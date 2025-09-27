@@ -9,11 +9,30 @@ const Experience = () => {
       type: 'Full Time',
       achievements: [
         'Developed and deployed a scalable MERN stack web application on AWS EC2, reducing server response time by 35% and enabling faster page load times across all user devices.',
-        'Implemented real-time features with Socket.io, increasing active session duration by 40% and boosting daily active users by 25%.',
-        'Led the end-to-end software lifecycle, achieving a 100% on-time delivery rate and reducing post-deployment bugs by 50%.'
+        'Implemented real-time features with Socket.io for live communication, increasing active session duration by 40% and boosting daily active users by 25%.',
+        'Built comprehensive RESTful API architecture with JWT authentication, enabling secure data exchange and user management.',
+        'Optimized database queries and implemented caching strategies, improving overall application performance and scalability.',
+        'Led the end-to-end software development lifecycle, achieving a 100% on-time delivery rate and reducing post-deployment bugs by 50%.'
       ],
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io', 'AWS EC2', 'JWT'],
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io', 'AWS EC2', 'JWT', 'Redux', 'Tailwind CSS'],
       color: 'from-blue-600 to-purple-600'
+    },
+    {
+      title: 'Research Assistant (Volunteer)',
+      company: 'Tunnel',
+      location: 'Remote',
+      period: 'Apr 2023 - Jun 2023',
+      duration: '3 months',
+      type: 'Volunteer',
+      achievements: [
+        'Conducted advanced research in artificial intelligence and machine learning algorithms, contributing to innovative solutions in computer vision.',
+        'Developed and optimized image processing algorithms using Python and OpenCV, improving accuracy by 25% in object detection tasks.',
+        'Managed and structured large datasets for machine learning models, implementing efficient database schemas and data pipelines.',
+        'Collaborated with research team to publish findings on AI applications in image recognition and pattern analysis.',
+        'Created comprehensive documentation and research reports for project stakeholders and academic publications.'
+      ],
+      technologies: ['Python', 'OpenCV', 'TensorFlow', 'Machine Learning', 'Data Analysis', 'Database Management', 'Research Methodology'],
+      color: 'from-purple-600 to-indigo-600'
     },
     {
       title: 'Full Stack Developer',
@@ -23,11 +42,13 @@ const Experience = () => {
       duration: '5 months',
       type: 'Contract',
       achievements: [
-        'Built a responsive React-based web app with an interactive Chart.js admin dashboard, improving load times by 30% and reducing admin data retrieval time by 50%.',
-        'Developed and integrated secure RESTful APIs with authentication, ensuring zero security breaches during production usage.',
-        'Optimized frontend performance and UX, increasing user satisfaction scores by 25% and boosting returning users by 15%.'
+        'Built a responsive React-based web application with interactive Chart.js admin dashboard, improving load times by 30% and reducing admin data retrieval time by 50%.',
+        'Developed and integrated secure RESTful APIs with JWT authentication and role-based access control, ensuring zero security breaches during production usage.',
+        'Implemented real-time data visualization features using Chart.js and D3.js, enabling dynamic business intelligence reporting for stakeholders.',
+        'Optimized frontend performance through code splitting and lazy loading, increasing user satisfaction scores by 25% and boosting returning users by 15%.',
+        'Collaborated with cross-functional teams to deliver pixel-perfect UI/UX designs and maintain high code quality standards.'
       ],
-      technologies: ['React', 'Chart.js', 'REST APIs', 'Authentication', 'JavaScript', 'CSS'],
+      technologies: ['React', 'Chart.js', 'D3.js', 'REST APIs', 'JWT', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js'],
       color: 'from-green-600 to-blue-600'
     }
   ];
@@ -40,7 +61,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-300 mb-16 max-w-2xl mx-auto">
-            Over 1.5 years of hands-on experience in full-stack development, delivering impactful solutions
+            Over 2+ years of diverse experience in full-stack development and AI research, delivering impactful solutions
           </p>
 
           <div className="space-y-12">
@@ -135,7 +156,7 @@ const Experience = () => {
           {/* Summary Stats */}
           <div className="mt-16 grid md:grid-cols-4 gap-6">
             <div className="text-center bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-xl">
-              <div className="text-3xl font-bold mb-2">1.5+</div>
+              <div className="text-3xl font-bold mb-2">2+</div>
               <div className="text-blue-100">Years Experience</div>
             </div>
             <div className="text-center bg-gradient-to-br from-green-500 to-blue-600 text-white p-6 rounded-xl">

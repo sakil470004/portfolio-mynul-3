@@ -76,13 +76,18 @@ const About = () => {
                 <h4 className="text-xl font-semibold mb-4">Education</h4>
                 <div className="space-y-3">
                   <div>
-                    <h5 className="font-medium">BSc in Computer Science</h5>
+                    <h5 className="font-medium">BSc in Computer Science and Engineering</h5>
                     <p className="text-blue-100">Manarat International University, Dhaka</p>
-                    <p className="text-blue-200 text-sm">Jan 2020 - Apr 2024</p>
+                    <p className="text-blue-200 text-sm">2020 - 2023</p>
+                  </div>
+                  <div>
+                    <h5 className="font-medium">Higher Secondary School</h5>
+                    <p className="text-blue-100">Chowmuhani Government S.A College</p>
+                    <p className="text-blue-200 text-sm">2018 - 2019</p>
                   </div>
                   <div>
                     <h5 className="font-medium">Complete Web Development Course</h5>
-                    <p className="text-blue-100">Professional Certification</p>
+                    <p className="text-blue-100">Programming Hero - Professional Certification</p>
                     <p className="text-blue-200 text-sm">Jan 2023 - Jul 2023</p>
                   </div>
                 </div>
@@ -108,7 +113,7 @@ const About = () => {
                     <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                     </svg>
-                    <span className="text-gray-600 dark:text-gray-300">Dhaka, Bangladesh</span>
+                    <span className="text-gray-600 dark:text-gray-300">Poloanpol, Noakhali, Bangladesh</span>
                   </div>
                 </div>
               </div>

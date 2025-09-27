@@ -5,7 +5,8 @@ import About from './components/About';
 import Stats from './components/Stats';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
+import Projects from './components/Projects.tsx';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
 // Dynamic imports for components that might cause hydration issues
@@ -26,7 +27,9 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
-        <Testimonials />
+        <Certifications />
+        {/* I don't have enough now */}
+        {/* <Testimonials /> */}
         <Contact />
         <FloatingActionButton />
       </div>

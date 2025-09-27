@@ -141,18 +141,50 @@ const Skills = () => {
           <div className="mt-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-6 text-center">Problem Solving & Competitive Programming</h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div className="bg-white/10 rounded-lg p-4">
+              <a 
+                href="https://leetcode.com/u/mynul47/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-300 group"
+              >
+                <div className="flex justify-center mb-2">
+                  <div className="w-8 h-8 bg-yellow-400 rounded group-hover:scale-110 transition-transform flex items-center justify-center">
+                    <span className="text-black font-bold text-sm">LC</span>
+                  </div>
+                </div>
                 <h4 className="font-semibold mb-2">LeetCode</h4>
                 <p className="text-purple-200">Algorithm & Data Structure Problems</p>
-              </div>
-              <div className="bg-white/10 rounded-lg p-4">
+              </a>
+              
+              <a 
+                href="https://codeforces.com/profile/Sakil470004" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-300 group"
+              >
+                <div className="flex justify-center mb-2">
+                  <div className="w-8 h-8 bg-blue-400 rounded group-hover:scale-110 transition-transform flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">CF</span>
+                  </div>
+                </div>
                 <h4 className="font-semibold mb-2">Codeforces</h4>
                 <p className="text-purple-200">Competitive Programming Contests</p>
-              </div>
-              <div className="bg-white/10 rounded-lg p-4">
+              </a>
+              
+              <a 
+                href="https://www.hackerrank.com/profile/mynul_sakil" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-300 group"
+              >
+                <div className="flex justify-center mb-2">
+                  <div className="w-8 h-8 bg-green-400 rounded group-hover:scale-110 transition-transform flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">HR</span>
+                  </div>
+                </div>
                 <h4 className="font-semibold mb-2">HackerRank</h4>
                 <p className="text-purple-200">Technical Challenge Solutions</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
