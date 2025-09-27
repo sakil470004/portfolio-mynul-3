@@ -13,8 +13,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Programmer Mynul",
-  description: "This page is created by Mynul Islam",
+  title: "Mynul Islam - Full Stack Developer",
+  description: "Passionate Full Stack Developer from Dhaka, Bangladesh. Specialized in MERN stack with 1.5+ years of experience building scalable web applications.",
+  keywords: "Full Stack Developer, MERN Stack, React, Node.js, JavaScript, TypeScript, Web Development, Mynul Islam",
+  authors: [{ name: "Mynul Islam" }],
+  creator: "Mynul Islam",
+  openGraph: {
+    title: "Mynul Islam - Full Stack Developer",
+    description: "Passionate Full Stack Developer specialized in MERN stack development",
+    url: "https://mynul-portfolio.vercel.app",
+    siteName: "Mynul Islam Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mynul Islam - Full Stack Developer",
+    description: "Passionate Full Stack Developer specialized in MERN stack development",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

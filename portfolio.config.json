@@ -1,0 +1,38 @@
+{
+  "name": "Mynul Islam - Portfolio Setup",
+  "version": "1.0.0",
+  "description": "Setup commands for Mynul Islam's portfolio website",
+  "scripts": {
+    "setup": "npm install && npm run dev",
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next",
+    "fresh-install": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "author": "Mynul Islam <mynul.sakil@gmail.com>",
+  "portfolio": {
+    "name": "Mynul Islam",
+    "role": "Full Stack Developer",
+    "location": "Dhaka, Bangladesh",
+    "experience": "1.5+ years",
+    "specialization": "MERN Stack",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "links": {
+      "email": "mynul.sakil@gmail.com",
+      "phone": "+8801581477504",
+      "github": "https://github.com/mynul-sakil",
+      "linkedin": "https://linkedin.com/in/mynul-sakil"
+    }
+  }
+}
