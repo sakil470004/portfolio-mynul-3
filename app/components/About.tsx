@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
@@ -7,8 +9,31 @@ const About = () => {
             About Me
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid lg:grid-cols-3 gap-12 items-start">
+            {/* Professional Photo */}
+            <div className="lg:col-span-1 flex justify-center">
+              <div className="relative group">
+                <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
+                  {/* Decorative background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-300"></div>
+                  <div className="absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                    <Image
+                      src="/me.png"
+                      alt="Mynul Islam - Professional Photo"
+                      fill
+                      className="object-cover object-center"
+                    />
+                  </div>
+                  {/* Professional badge */}
+                  <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                    1.5+ Years Experience
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="lg:col-span-2 space-y-6">
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
                 Full Stack Developer with Proven Track Record
               </h3>
