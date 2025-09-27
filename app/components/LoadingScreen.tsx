@@ -5,8 +5,15 @@ import { useState, useEffect } from 'react';
 const LoadingScreen = () => {
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+    
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
         if (prevProgress >= 100) {
@@ -19,7 +26,7 @@ const LoadingScreen = () => {
     }, 50);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [isClient]);
 
   if (!loading) return null;
 

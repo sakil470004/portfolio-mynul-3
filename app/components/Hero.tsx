@@ -6,8 +6,15 @@ import Image from 'next/image';
 const Hero = () => {
   const [text, setText] = useState('');
   const [currentRole, setCurrentRole] = useState(0);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+    
     const roles = ['Full Stack Developer', 'MERN Stack Expert', 'React Specialist', 'API Developer'];
     const typeText = async () => {
       const currentRoleText = roles[currentRole];
@@ -24,14 +31,14 @@ const Hero = () => {
     };
     
     typeText();
-  }, [currentRole]);
+  }, [currentRole, isClient]);
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section id="hero" className="pt-16 md:mt-0 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 text-white relative overflow-hidden">
+    <section id="hero" className="py-20 md:py-0 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-20"></div>
       
       {/* Animated background elements */}
@@ -50,7 +57,7 @@ const Hero = () => {
               </h1>
               
               <div className="text-xl md:text-2xl lg:text-3xl mb-6 h-12 flex items-center justify-center lg:justify-start">
-                <span className="font-light">{text}</span>
+                <span className="font-light">{text || 'Full Stack Developer'}</span>
                 <span className="animate-pulse ml-1">|</span>
               </div>
               
