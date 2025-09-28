@@ -323,7 +323,7 @@ const Projects = () => {
                     {Object.keys(projects[selectedProject].links).map((key) => (
                       <a
                         key={key}
-                        href={projects[selectedProject].links[key]}
+                        href={projects[selectedProject].links[key] }
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
