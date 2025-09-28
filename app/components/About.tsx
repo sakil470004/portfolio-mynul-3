@@ -92,7 +92,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              
+              {/* contact info */}
               <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl">
                 <h4 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Contact Info</h4>
                 <div className="space-y-3">

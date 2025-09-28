@@ -81,10 +81,10 @@ const Navigation = () => {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 ${
+                  className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:text-pink-600 dark:hover:text-pink-400 ${
                     activeSection === item.href
-                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600'
-                      : 'text-gray-700 dark:text-gray-300'
+                      ? 'text-pink-600 dark:text-pink-400 border-b-2 border-pink-600'
+                      : 'text-gray-900 dark:text-gray-300'
                   }`}
                 >
                   {item.name}
