@@ -3,62 +3,51 @@
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Complete Web Development Course',
+      title: 'Web Development',
       issuer: 'Programming Hero',
       date: '2023',
       type: 'Professional Development',
       description: 'Comprehensive full-stack web development program covering modern JavaScript frameworks, backend technologies, and industry best practices.',
       skills: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript ES6+', 'HTML5', 'CSS3'],
       credentialId: 'PH-2023-WEB-DEV',
+      certificate_link: 'https://drive.google.com/file/d/1ccSksBxmvR8wGjrPnySWpyAeGeWvNOcG/view?usp=drive_link',
+      logo_path: 'programming-hero.png',
+      alt_name: 'Programming Hero',
       color: 'from-green-500 to-emerald-600'
     },
     {
-      title: 'Advanced JavaScript & React Development',
-      issuer: 'Udemy',
-      date: '2022',
-      type: 'Online Course',
-      description: 'In-depth course focusing on advanced JavaScript concepts, React ecosystem, and modern development workflows.',
-      skills: ['Advanced JavaScript', 'React Hooks', 'Redux', 'Context API', 'Performance Optimization'],
-      credentialId: 'UC-REACT-ADV-2022',
-      color: 'from-blue-500 to-indigo-600'
-    },
-    {
-      title: 'Full Stack Web Development with MERN',
-      issuer: 'Udemy',
-      date: '2022',
-      type: 'Online Course',
-      description: 'Complete MERN stack development course with hands-on projects and real-world applications.',
-      skills: ['MongoDB', 'Express.js', 'React', 'Node.js', 'REST APIs', 'Authentication'],
-      credentialId: 'UC-MERN-2022',
-      color: 'from-purple-500 to-pink-600'
-    },
-    {
-      title: 'Bachelor of Science in Computer Science',
-      issuer: 'Noakhali Science and Technology University',
-      date: '2020-2023',
-      type: 'Academic Degree',
-      description: 'Comprehensive computer science education covering algorithms, data structures, software engineering, and computer systems.',
-      skills: ['Algorithms', 'Data Structures', 'Software Engineering', 'Database Systems', 'Computer Networks', 'Operating Systems'],
-      credentialId: 'NSTU-CSE-2023',
-      color: 'from-yellow-500 to-orange-600'
-    },
-    {
-      title: 'Machine Learning & AI Fundamentals',
+      title: 'The Meditation Blueprint: Building Your Inner Sanctuary',
       issuer: 'Udemy',
       date: '2023',
       type: 'Online Course',
-      description: 'Introduction to machine learning concepts, AI algorithms, and practical applications in modern software development.',
-      skills: ['Machine Learning', 'Python', 'TensorFlow', 'Data Analysis', 'Neural Networks'],
-      credentialId: 'UC-ML-AI-2023',
-      color: 'from-red-500 to-rose-600'
+      description: 'Comprehensive meditation course focusing on building mindfulness practices and creating inner peace through structured meditation techniques.',
+      skills: ['Mindfulness', 'Meditation', 'Stress Management', 'Inner Peace', 'Self-Awareness'],
+      credentialId: 'UC-cb5959a9-9dd0-4ce8-b1cc-ed02c24c1e8d',
+      certificate_link: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-cb5959a9-9dd0-4ce8-b1cc-ed02c24c1e8d.pdf',
+      logo_path: 'meditation.webp',
+      alt_name: 'Meditation Blueprint',
+      color: 'from-blue-500 to-indigo-600'
+    },
+    {
+      title: 'Manarat International University',
+      issuer: 'Manarat International University',
+      date: '2020-2024',
+      type: 'Academic Results',
+      description: 'Academic results and achievements from Manarat International University, demonstrating consistent academic performance and dedication to learning.',
+      skills: ['Academic Excellence', 'Research', 'Critical Thinking', 'Problem Solving', 'Academic Writing'],
+      credentialId: 'MIU-2024-RESULTS',
+      certificate_link: 'https://drive.google.com/file/d/1N7KB9OFvoNXxKuE3MCTzo03UovA0NIm0/view?usp=drive_link',
+      logo_path: 'manarat-logo.jpeg',
+      alt_name: 'Manarat International University',
+      color: 'from-purple-500 to-pink-600'
     }
   ];
 
   const stats = [
-    { number: '5+', label: 'Certifications', icon: '🏆' },
-    { number: '3+', label: 'Platforms', icon: '🎓' },
+    { number: '3+', label: 'Certifications', icon: '🏆' },
+    { number: '2+', label: 'Platforms', icon: '🎓' },
     { number: '100+', label: 'Study Hours', icon: '⏰' },
-    { number: '95%', label: 'Completion Rate', icon: '✅' }
+    { number: '100%', label: 'Completion Rate', icon: '✅' }
   ];
 
   return (
@@ -138,11 +127,24 @@ const Certifications = () => {
                     </div>
                   </div>
 
-                  {/* Credential ID */}
-                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+                  {/* Credential ID and Certificate Link */}
+                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
                     <p className="text-xs text-gray-500 dark:text-gray-400">
                       Credential ID: {cert.credentialId}
                     </p>
+                    {cert.certificate_link && (
+                      <a
+                        href={cert.certificate_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        View Certificate
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -158,10 +160,10 @@ const Certifications = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <span className="bg-white/20 px-4 py-2 rounded-full text-sm font-medium">
-                🎯 Next: AWS Certification
+                🎯 Next: 50 Day Algorithms Course
               </span>
               <span className="bg-white/20 px-4 py-2 rounded-full text-sm font-medium">
-                🚀 In Progress: Advanced React
+                🚀 In Progress: Advanced Docker
               </span>
               <span className="bg-white/20 px-4 py-2 rounded-full text-sm font-medium">
                 💡 Learning: TypeScript Advanced
