@@ -1,13 +1,31 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
-const placeholderImage = "/api/placeholder/600/400";
+// Define types for better TypeScript support
+type ProjectLinks = {
+  live?: string;
+  github?: string;
+  server?: string;
+  details?: string;
+};
+
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  features: string[];
+  links: ProjectLinks;
+  category: string;
+};
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
 
-  const projects = [
+  const projects: Project[] = [
     {
       id: 1,
       title: "Ticket Fusion - Event Management Platform",
@@ -294,10 +312,12 @@ const Projects = () => {
 
                 <div className="space-y-12">
                   <div className="bg-gray-100 dark:bg-gray-700 rounded-xl p-6 aspect-video flex items-center justify-center">
-                    {projects[selectedProject].image ? (
-                      <img
-                        src={projects[selectedProject].image}
-                        alt={projects[selectedProject].title}
+                    {projects[selectedProject]?.image ? (
+                      <Image
+                        src={projects[selectedProject]?.image || '/placeholder.png'}
+                        alt={projects[selectedProject]?.title || 'Project image'}
+                        width={500}
+                        height={300}
                         className="object-cover w-full h-full rounded-lg"
                       />
                     ) : (
@@ -320,10 +340,13 @@ const Projects = () => {
                     )}
                   </div>
                     <div className="flex space-x-4">
-                    {Object.keys(projects[selectedProject].links).map((key) => (
+                    {Object.entries(projects[selectedProject]?.links || {}).map(([key, url]) => {
+                      if (!url) return null; // Skip if URL is undefined
+                      
+                      return (
                       <a
                         key={key}
-                        href={projects[selectedProject].links[key] }
+                        href={url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
@@ -388,8 +411,9 @@ const Projects = () => {
                             <span>Details</span>
                           </>
                         )}
-                      </a>
-                    ))}
+                        </a>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -409,9 +433,11 @@ const Projects = () => {
                 <div className="p-6">
                   <div className="bg-gray-100 dark:bg-gray-700 rounded-lg mb-4 aspect-video flex items-center justify-center">
                     {project.image ? (
-                      <img
+                      <Image
                         src={project.image}
                         alt={project.title}
+                        width={400}
+                        height={250}
                         className="object-cover w-full h-full rounded-lg"
                       />
                     ) : (
