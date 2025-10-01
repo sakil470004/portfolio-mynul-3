@@ -23,17 +23,47 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('idle');
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        
+        // Auto-hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      } else {
+        setSubmitStatus('error');
+        console.error('Form submission error:', result.error);
+        
+        // Auto-hide error message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      setSubmitStatus('error');
       
+      // Auto-hide error message after 5 seconds
       setTimeout(() => {
         setSubmitStatus('idle');
-      }, 3000);
-    }, 1000);
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -101,6 +131,16 @@ const Contact = () => {
       ),
       color: 'hover:bg-blue-600'
     },
+    {
+      name: 'Portfolio',
+      url: '#',
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
+        </svg>
+      ),
+      color: 'hover:bg-purple-600'
+    }
    
   ];
 
@@ -279,6 +319,19 @@ const Contact = () => {
                       </svg>
                       <span className="text-green-800 dark:text-green-400 font-medium">
                         Message sent successfully! I&apos;ll get back to you soon.
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                    <div className="flex items-center space-x-3">
+                      <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                      <span className="text-red-800 dark:text-red-400 font-medium">
+                        Failed to send message. Please try again or contact me directly.
                       </span>
                     </div>
                   </div>
