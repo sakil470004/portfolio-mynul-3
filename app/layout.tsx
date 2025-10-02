@@ -38,7 +38,7 @@ export  const metadata: Metadata = {
     description:
       'Experienced Full Stack Developer based in Dhaka, Bangladesh, specializing in MERN stack and modern web technologies. Building innovative web applications with modern technologies.',
     creator: '@mynul_sakil',
-    images: ['/me.png'] // Must be an absolute URL
+    images: ['/public/me.png'] // Must be an absolute URL
   },
   robots: {
     index: true,
