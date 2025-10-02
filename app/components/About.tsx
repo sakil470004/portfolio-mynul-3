@@ -26,7 +26,7 @@ const About = () => {
                   </div>
                   {/* Professional badge */}
                   <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    1.5+ Years Experience
+                    2+ Years Experience
                   </div>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="space-x-6 flex justify-end mt-16 lg:mt-20">
+          <div className="space-x-6 md:flex md:justify-end mt-16 lg:mt-20">
             {/* education */}
             <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white">
               <h4 className="text-xl font-semibold mb-4">Education</h4>
