@@ -57,7 +57,7 @@ const Hero = () => {
               </h1>
               
               <div className="text-xl md:text-2xl lg:text-3xl mb-6 h-12 flex items-center justify-center lg:justify-start">
-                <span className="font-light">{text || 'Full Stack Developer'}</span>
+                <span className="font-light uppercase">{text || 'Full Stack Developer'}</span>
                 <span className="animate-pulse ml-1">|</span>
               </div>
               
