@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 
+
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -68,9 +69,12 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-2xl font-bold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              className="text-3xl font-bold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400  transition-colors duration-300"
             >
+             <span >
+
               Mynul.dev
+             </span>
             </button>
           </div>
 
