@@ -495,7 +495,7 @@ const Projects = () => {
               Interested in seeing more of my work?
             </p>
             <a
-              href="https://github.com/mynul-sakil"
+              href="https://github.com/sakil470004"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
