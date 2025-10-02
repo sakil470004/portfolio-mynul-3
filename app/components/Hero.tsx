@@ -53,7 +53,7 @@ const Hero = () => {
             {/* Text Content */}
             <div className="text-center lg:text-left order-2 lg:order-1">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-               <span > MYNUL ISLAM</span>
+               <span className="font-bitcount"> MYNUL ISLAM</span>
               </h1>
               
               <div className="text-xl md:text-2xl lg:text-3xl mb-6 h-12 flex items-center justify-center lg:justify-start">

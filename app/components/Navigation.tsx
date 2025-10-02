@@ -71,7 +71,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('hero')}
               className="text-3xl font-bold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400  transition-colors duration-300"
             >
-             <span >
+             <span className="font-bitcount" >
 
               Mynul.dev
              </span>
