@@ -13,28 +13,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mynul Islam - Full Stack Developer",
-  description: "Passionate Full Stack Developer from Dhaka, Bangladesh. Specialized in MERN stack with 1.5+ years of experience building scalable web applications.",
-  keywords: "Full Stack Developer, MERN Stack, React, Node.js, JavaScript, TypeScript, Web Development, Mynul Islam",
-  authors: [{ name: "Mynul Islam" }],
-  creator: "Mynul Islam",
+  title: 'Mynul Islam',
+  description:
+    'Experienced Full Stack Developer based in Dhaka, Bangladesh, specializing in MERN stack and modern web technologies. Passionate about building scalable applications and sharing knowledge with the tech community.',
+  keywords:
+    'Mynul Islam, Mynul, Sakil, Full-stack Developer, MERN Stack, React, Next.js, Node.js, Express.js, MongoDB, JavaScript, TypeScript, Web Development, Dhaka, Bangladesh, Programming Hero, Software Engineer',
+  applicationName: 'Portfolio of Mynul Islam',
+  creator: 'Mynul Islam',
+  publisher: 'Mynul Islam',
+  category: 'personal',
+  metadataBase: new URL('https://portfolio-mynul-3.vercel.app/'),
   openGraph: {
-    title: "Mynul Islam - Full Stack Developer",
-    description: "Passionate Full Stack Developer specialized in MERN stack development",
-    url: "https://mynul-portfolio.vercel.app",
-    siteName: "Mynul Islam Portfolio",
-    locale: "en_US",
-    type: "website",
+    title: 'Mynul Islam - Full Stack Developer',
+    description:
+      'Experienced Full Stack Developer based in Dhaka, Bangladesh, specializing in MERN stack and modern web technologies. Passionate about building scalable applications and sharing knowledge with the tech community.',
+    images: ['/me.png'],
+    siteName: 'Portfolio of Mynul Islam',
+    locale: 'en_US',
+    type: 'website',
+    url: 'https://portfolio-mynul-3.vercel.app/',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Mynul Islam - Full Stack Developer",
-    description: "Passionate Full Stack Developer specialized in MERN stack development",
+    card: 'summary_large_image',
+    title: 'Mynul Islam - Full Stack Developer',
+    description:
+      'Experienced Full Stack Developer based in Dhaka, Bangladesh, specializing in MERN stack and modern web technologies. Building innovative web applications with modern technologies.',
+    creator: '@mynul_sakil',
+    images: ['/me.png'] // Must be an absolute URL
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+ 
 };
 
 export default function RootLayout({
