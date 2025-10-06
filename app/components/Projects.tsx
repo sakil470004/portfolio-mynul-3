@@ -234,23 +234,7 @@ const Projects = () => {
             development and modern technologies
           </p>
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 m-2 rounded-full font-medium transition-all duration-300 ${
-                  activeCategory === category
-                    ? "bg-blue-600 text-white shadow-lg transform scale-105"
-                    : "bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-600"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-
+     
           {/* Featured Project */}
           <div className="mb-16">
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden">
@@ -419,6 +403,23 @@ const Projects = () => {
               </div>
             </div>
           </div>
+               {/* Category Filter */}
+          <div className="flex flex-wrap justify-start mb-12">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-6 py-3 m-2 rounded-full font-medium transition-all duration-300 ${
+                  activeCategory === category
+                    ? "bg-blue-600 text-white shadow-lg transform scale-105"
+                    : "bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-600"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
 
           {/* Project Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
