@@ -124,7 +124,7 @@ const Hero = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 rounded-full p-1">
                     <div className="w-full h-full bg-gray-900 rounded-full p-4 relative overflow-hidden">
                       <Image
-                        src="/me-mode.png"
+                        src="/me-mode2.png"
                         alt="Mynul Islam - Full Stack Developer"
                         fill
                         className="object-cover object-center rounded-full"
