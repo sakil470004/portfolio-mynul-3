@@ -155,7 +155,7 @@ const Skills = () => {
           </div>
 
           {/* Problem Solving Section */}
-          <div className="mt-16 bg-gradient-to-r from-blue-500 from-45% to-blue-700 rounded-2xl p-8 text-white">
+          <div className="mt-16 bg-gradient-to-r from-blue-600 via-gray-600 to-indigo-500 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-6 text-center">Problem Solving & Competitive Programming</h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <a 

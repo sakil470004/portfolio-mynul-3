@@ -152,7 +152,7 @@ const Certifications = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+          <div className="mt-16 text-center bg-gradient-to-r from-blue-600 via-gray-600 to-indigo-500 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Committed to Continuous Learning</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
               I believe in staying updated with the latest technologies and industry trends. 
