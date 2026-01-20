@@ -31,7 +31,7 @@ const LoadingScreen = () => {
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gradient-to-br from-blue-600 via-gray-600 to-indigo-500 flex items-center justify-center z-50">
       <div className="text-center">
         {/* Logo/Name */}
         <div className="mb-8">
