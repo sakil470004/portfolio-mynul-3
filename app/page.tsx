@@ -23,13 +23,13 @@ export default function Home() {
         <Navigation />
         <Hero />
         <About />
-        <Stats />
         <Skills />
         <Experience />
         <Projects />
         <Certifications />
         {/* I don't have enough now */}
         {/* <Testimonials /> */}
+        <Stats />
         <Contact />
         <FloatingActionButton />
       </div>

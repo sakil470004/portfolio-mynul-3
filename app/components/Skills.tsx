@@ -18,6 +18,40 @@ const Skills = () => {
         { name: 'Tailwind CSS', level: 90, color: 'bg-teal-500' }
       ]
     },
+    all:{
+      title: 'All Skills',
+      skills: [
+        { name: 'React', level: 90, color: 'bg-blue-500' },
+        { name: 'Next.js', level: 85, color: 'bg-gray-800' },
+        { name: 'TypeScript', level: 80, color: 'bg-blue-600' },
+        { name: 'React Native', level: 75, color: 'bg-purple-500' },
+        { name: 'HTML/CSS', level: 95, color: 'bg-orange-500' },
+        { name: 'Bootstrap', level: 85, color: 'bg-purple-600' },
+        { name: 'Tailwind CSS', level: 90, color: 'bg-teal-500' },
+        { name: 'Node.js', level: 90, color: 'bg-green-500' },
+        { name: 'Express.js', level: 85, color: 'bg-gray-700' },
+        { name: 'REST APIs', level: 88, color: 'bg-blue-500' },
+        { name: 'JWT', level: 80, color: 'bg-red-500' },
+        { name: 'Prisma', level: 75, color: 'bg-indigo-500' },
+        { name: 'Django', level: 70, color: 'bg-green-700' },
+        { name: 'Stripe Integration', level: 85, color: 'bg-purple-600' },
+        { name: 'MongoDB', level: 90, color: 'bg-green-600' },
+        { name: 'Firebase', level: 85, color: 'bg-yellow-500' },
+        { name: 'MySQL', level: 80, color: 'bg-blue-600' },
+        { name: 'AWS S3', level: 75, color: 'bg-orange-500' },
+        { name: 'JavaScript', level: 92, color: 'bg-yellow-400' },
+        { name: 'Python', level: 80, color: 'bg-blue-500' },
+        { name: 'Java', level: 75, color: 'bg-red-600' },
+        { name: 'C/C++', level: 70, color: 'bg-gray-600' },
+        { name: 'Git/GitHub', level: 90, color: 'bg-gray-800' },
+        { name: 'AWS EC2', level: 85, color: 'bg-orange-600' },
+        { name: 'Docker', level: 75, color: 'bg-blue-600' },
+        { name: 'Jest', level: 80, color: 'bg-red-500' },
+        { name: 'Postman', level: 85, color: 'bg-orange-500' }, 
+        { name: 'VS Code', level: 95, color: 'bg-blue-500' },
+        { name: 'Figma', level: 70, color: 'bg-purple-500' }
+      ]
+    },
     backend: {
       title: 'Backend Development',
       skills: [
