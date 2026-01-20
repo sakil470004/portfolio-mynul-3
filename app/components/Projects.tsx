@@ -209,11 +209,11 @@ const Projects = () => {
   ];
 
   const categories = [
-    "All",
     "Full Stack",
     "E-commerce",
     "Utility",
     "Mobile App",
+    "All",
   ];
   const [activeCategory, setActiveCategory] = useState("All");
 

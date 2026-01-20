@@ -121,7 +121,7 @@ const Hero = () => {
                 
                 {/* Main photo container */}
                 <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 rounded-full p-1">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-gray-600 to-indigo-500 rounded-full p-1">
                     <div className="w-full h-full bg-gray-900 rounded-full p-4 relative overflow-hidden">
                       <Image
                         src="/me-mode2.png"

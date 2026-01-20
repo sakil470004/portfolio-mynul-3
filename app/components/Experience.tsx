@@ -4,15 +4,13 @@ const Experience = () => {
       title: 'Full Stack Developer',
       company: 'Aliyah Holdings LLC',
       location: 'Remote',
-      period: 'Aug 2024 - Jul 2025',
-      duration: '1 year',
+      period: 'Aug 2024 - Jan 2026',
+      duration: '1 year 5 months',
       type: 'Full Time',
       achievements: [
-        'Developed and deployed a scalable MERN stack web application on AWS EC2, reducing server response time by 35% and enabling faster page load times across all user devices.',
-        'Implemented real-time features with Socket.io for live communication, increasing active session duration by 40% and boosting daily active users by 25%.',
-        'Built comprehensive RESTful API architecture with JWT authentication, enabling secure data exchange and user management.',
-        'Optimized database queries and implemented caching strategies, improving overall application performance and scalability.',
-        'Led the end-to-end software development lifecycle, achieving a 100% on-time delivery rate and reducing post-deployment bugs by 50%.'
+        'Developed and deployed a scalable MERN stack web application on AWS EC2, enabling faster page load times and improved server performance across all user devices.',
+        'Implemented real-time features with Socket.io for live communication, significantly boosting user engagement and active session duration.',
+        'Built comprehensive RESTful API architecture with JWT authentication and optimized database queries with caching strategies for enhanced security and scalability.'
       ],
       technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io', 'AWS EC2', 'JWT', 'Redux', 'Tailwind CSS'],
       color: 'from-blue-600 to-purple-600'
@@ -21,15 +19,13 @@ const Experience = () => {
       title: 'Research Assistant (Volunteer)',
       company: 'Tunnel',
       location: 'Remote',
-      period: 'Apr 2023 - Jun 2023',
-      duration: '3 months',
+      period: 'Apr 2023 - Jun 2024',
+      duration: '1 year 3 months',
       type: 'Volunteer',
       achievements: [
-        'Conducted advanced research in artificial intelligence and machine learning algorithms, contributing to innovative solutions in computer vision.',
-        'Developed and optimized image processing algorithms using Python and OpenCV, improving accuracy by 25% in object detection tasks.',
-        'Managed and structured large datasets for machine learning models, implementing efficient database schemas and data pipelines.',
-        'Collaborated with research team to publish findings on AI applications in image recognition and pattern analysis.',
-        'Created comprehensive documentation and research reports for project stakeholders and academic publications.'
+        'Conducted advanced research in artificial intelligence and machine learning algorithms, contributing to innovative solutions in computer vision and image recognition.',
+        'Developed and optimized image processing algorithms using Python and OpenCV, achieving significant improvements in object detection accuracy.',
+        'Managed large datasets for machine learning models, implementing efficient database schemas and creating comprehensive documentation for academic publications.'
       ],
       technologies: ['Python', 'OpenCV', 'TensorFlow', 'Machine Learning', 'Data Analysis', 'Database Management', 'Research Methodology'],
       color: 'from-blue-500 from-45% to-blue-700'
@@ -42,11 +38,9 @@ const Experience = () => {
       duration: '5 months',
       type: 'Contract',
       achievements: [
-        'Built a responsive React-based web application with interactive Chart.js admin dashboard, improving load times by 30% and reducing admin data retrieval time by 50%.',
-        'Developed and integrated secure RESTful APIs with JWT authentication and role-based access control, ensuring zero security breaches during production usage.',
-        'Implemented real-time data visualization features using Chart.js and D3.js, enabling dynamic business intelligence reporting for stakeholders.',
-        'Optimized frontend performance through code splitting and lazy loading, increasing user satisfaction scores by 25% and boosting returning users by 15%.',
-        'Collaborated with cross-functional teams to deliver pixel-perfect UI/UX designs and maintain high code quality standards.'
+        'Built a responsive React-based web application with interactive Chart.js admin dashboard, delivering improved load times and streamlined data retrieval.',
+        'Developed and integrated secure RESTful APIs with JWT authentication and role-based access control, maintaining zero security breaches during production.',
+        'Implemented real-time data visualization using Chart.js and D3.js, enabling dynamic business intelligence reporting and optimized frontend performance through code splitting.'
       ],
       technologies: ['React', 'Chart.js', 'D3.js', 'REST APIs', 'JWT', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js'],
       color: 'from-green-600 to-blue-600'
