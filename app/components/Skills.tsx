@@ -93,7 +93,7 @@ const Skills = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 m-2 rounded-full font-medium transition-all duration-300 ${
+                className={`px-6 py-3 m-2 text-xs rounded-full font-medium transition-all duration-300 ${
                   activeCategory === category
                     ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                     : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-600'
