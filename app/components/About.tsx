@@ -98,12 +98,12 @@ const About = () => {
                 <li>
                   <span className="font-medium">BSc in Computer Science and Engineering</span>
                   <p className="text-blue-100 ml-5">Manarat International University, Dhaka</p>
-                  <p className="text-blue-200 text-sm ml-5">2020 - 2023</p>
+                  <p className="text-blue-200 text-sm ml-5">Jan 2020 - Apr 2024</p>
                 </li>
                 <li>
                   <span className="font-medium">Higher Secondary School</span>
                   <p className="text-blue-100 ml-5">Chowmuhani Government S.A College</p>
-                  <p className="text-blue-200 text-sm ml-5">2018 - 2019</p>
+                  <p className="text-blue-200 text-sm ml-5">2018 - 2019 Batch</p>
                 </li>
                 <li>
                   <span className="font-medium">Complete Web Development Course</span>
