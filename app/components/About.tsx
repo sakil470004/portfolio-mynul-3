@@ -92,70 +92,60 @@ const About = () => {
           </div>
           <div className="space-x-6 md:flex md:justify-end mt-16 lg:mt-20">
             {/* education */}
-            <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white">
+            <div className="bg-gradient-to-br from-blue-600 via-gray-600 to-indigo-500 p-8 rounded-2xl text-white">
               <h4 className="text-xl font-semibold mb-4">Education</h4>
-              <div className="space-y-3">
-                <div>
-                  <h5 className="font-medium">
-                    BSc in Computer Science and Engineering
-                  </h5>
-                  <p className="text-blue-100">
-                    Manarat International University, Dhaka
-                  </p>
-                  <p className="text-blue-200 text-sm">2020 - 2023</p>
-                </div>
-                <div>
-                  <h5 className="font-medium">Higher Secondary School</h5>
-                  <p className="text-blue-100">
-                    Chowmuhani Government S.A College
-                  </p>
-                  <p className="text-blue-200 text-sm">2018 - 2019</p>
-                </div>
-                <div>
-                  <h5 className="font-medium">
-                    Complete Web Development Course
-                  </h5>
-                  <p className="text-blue-100">
-                    Programming Hero - Professional Certification
-                  </p>
-                  <p className="text-blue-200 text-sm">Jan 2023 - Jul 2023</p>
-                </div>
-              </div>
+              <ul className="space-y-3 list-disc list-inside">
+                <li>
+                  <span className="font-medium">BSc in Computer Science and Engineering</span>
+                  <p className="text-blue-100 ml-5">Manarat International University, Dhaka</p>
+                  <p className="text-blue-200 text-sm ml-5">2020 - 2023</p>
+                </li>
+                <li>
+                  <span className="font-medium">Higher Secondary School</span>
+                  <p className="text-blue-100 ml-5">Chowmuhani Government S.A College</p>
+                  <p className="text-blue-200 text-sm ml-5">2018 - 2019</p>
+                </li>
+                <li>
+                  <span className="font-medium">Complete Web Development Course</span>
+                  <p className="text-blue-100 ml-5">Programming Hero - Professional Certification</p>
+                  <p className="text-blue-200 text-sm ml-5">Jan 2023 - Jul 2023</p>
+                </li>
+              </ul>
             </div>
             {/* contact info */}
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl">
-              <h4 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
+            <div className="bg-gradient-to-br from-blue-600  to-gray-500 text-white p-6 rounded-xl">
+              <h4 className="text-xl font-semibold mb-4  ">
                 Contact Info
               </h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <svg
-                    className="w-5 h-5 text-gray-500"
+                    className="w-5 h-5 "
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-300">
+                  <span >
                     mynul.sakil@gmail.com
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <svg
-                    className="w-5 h-5 text-gray-500"
+                    className="w-5 h-5 "
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-300">
+                  <span >
                     (+880) 1581477504
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <svg
-                    className="w-5 h-5 text-gray-500"
+                    className="w-5 h-5 "
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -165,8 +155,8 @@ const About = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-300">
-                    Poloanpol, Noakhali, Bangladesh
+                  <span >
+                    Noakhali, Bangladesh
                   </span>
                 </div>
               </div>

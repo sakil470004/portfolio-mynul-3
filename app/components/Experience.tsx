@@ -32,7 +32,7 @@ const Experience = () => {
         'Created comprehensive documentation and research reports for project stakeholders and academic publications.'
       ],
       technologies: ['Python', 'OpenCV', 'TensorFlow', 'Machine Learning', 'Data Analysis', 'Database Management', 'Research Methodology'],
-      color: 'from-purple-600 to-indigo-600'
+      color: 'from-blue-500 from-45% to-blue-700'
     },
     {
       title: 'Full Stack Developer',
@@ -153,25 +153,7 @@ const Experience = () => {
             ))}
           </div>
 
-          {/* Summary Stats */}
-          <div className="mt-16 grid md:grid-cols-4 gap-6">
-            <div className="text-center bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-xl">
-              <div className="text-3xl font-bold mb-2">2+</div>
-              <div className="text-blue-100">Years Experience</div>
-            </div>
-            <div className="text-center bg-gradient-to-br from-green-500 to-blue-600 text-white p-6 rounded-xl">
-              <div className="text-3xl font-bold mb-2">35%</div>
-              <div className="text-green-100">Performance Improvement</div>
-            </div>
-            <div className="text-center bg-gradient-to-br from-purple-500 to-pink-600 text-white p-6 rounded-xl">
-              <div className="text-3xl font-bold mb-2">100%</div>
-              <div className="text-purple-100">On-time Delivery</div>
-            </div>
-            <div className="text-center bg-gradient-to-br from-orange-500 to-red-600 text-white p-6 rounded-xl">
-              <div className="text-3xl font-bold mb-2">50%</div>
-              <div className="text-orange-100">Bug Reduction</div>
-            </div>
-          </div>
+        
         </div>
       </div>
     </section>

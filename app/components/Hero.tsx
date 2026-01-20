@@ -38,7 +38,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="py-20 md:py-0 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 text-white relative overflow-hidden">
+    <section id="hero" className="py-20 md:py-0 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-gray-600 to-indigo-500 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-20"></div>
       
       {/* Animated background elements */}

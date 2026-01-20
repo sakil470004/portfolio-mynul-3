@@ -39,7 +39,7 @@ const Certifications = () => {
       certificate_link: 'https://drive.google.com/file/d/1N7KB9OFvoNXxKuE3MCTzo03UovA0NIm0/view?usp=drive_link',
       logo_path: 'manarat-logo.jpeg',
       alt_name: 'Manarat International University',
-      color: 'from-purple-500 to-pink-600'
+      color: 'from-blue-500 from-45% to-blue-700'
     }
   ];
 

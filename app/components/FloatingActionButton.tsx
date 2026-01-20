@@ -97,7 +97,7 @@ const FloatingActionButton = () => {
       {/* Main FAB */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+        className={`w-16 h-16 bg-gradient-to-r from-blue-600 to-gray-600  hover:from-blue-700 hover:to-indigo-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 ${
           isOpen ? 'rotate-45' : 'rotate-0'
         }`}
       >
